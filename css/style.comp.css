@@ -1,0 +1,176 @@
+/** @format */
+/** @format */
+:root {
+  --color-primary-bg: #fff;
+  --color-primary-text: #202124; }
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+  background: var(--color-primary-bg);
+  color: var(--color-primary-text);
+  height: 100%;
+  padding: 0; }
+
+/** @format */
+.navbar {
+  width: auto;
+  height: 5rem;
+  margin-top: 2rem;
+  line-height: 1.6rem;
+  display: block;
+  text-align: right; }
+  .navbar_btn {
+    display: inline-block;
+    padding-right: 1.5rem; }
+    .navbar_btn-list {
+      font-size: 1.3rem;
+      display: inline;
+      list-style: none; }
+    .navbar_btn-item {
+      display: inline-block;
+      vertical-align: middle; }
+      .navbar_btn-item:not(:last-child) {
+        padding-right: 1.5rem; }
+    .navbar_btn-link:link, .navbar_btn-link:visited {
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      color: var(--color-primary-text); }
+    .navbar_btn-link:hover, .navbar_btn-link:active {
+      text-decoration: underline; }
+
+.app {
+  background-image: url(../img/apps-24px.svg);
+  width: 2.4rem;
+  height: 2.4rem; }
+
+.user_img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; }
+
+.mainbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 100vw; }
+  .mainbox_logo {
+    padding-top: 12rem;
+    text-align: center;
+    font-size: 4.5rem;
+    width: 15%; }
+    .mainbox_logo-google {
+      width: 100%;
+      padding-top: 7rem; }
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw; }
+  .searchbar_input {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20rem;
+    width: 30%;
+    height: 4.5rem;
+    padding: 1rem 1rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 2.5rem; }
+    .searchbar_input:hover {
+      background-color: #fff;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.26);
+      border-color: rgba(223, 225, 229, 0); }
+    .searchbar_input_icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: block;
+      border: none;
+      background: transparent;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer; }
+      .searchbar_input_icon-magn {
+        width: 2rem;
+        height: 2rem;
+        background-image: url(../img/icons8-search.svg); }
+      .searchbar_input_icon-voice {
+        background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png); }
+    .searchbar_input-form {
+      margin: 0 1rem;
+      font-size: 1.6rem;
+      outline: none;
+      border: none;
+      width: 90%; }
+  .searchbar_btn {
+    margin-top: 2rem;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .searchbar_btn-in {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 0.4rem;
+      color: #3c4043;
+      font-family: arial, sans-serif;
+      font-size: 1.4rem;
+      margin: 1.1rem 0.4rem;
+      padding: 0 1.6rem;
+      line-height: 2.7rem;
+      height: 3.6rem;
+      width: 7%;
+      text-align: center;
+      cursor: pointer;
+      outline: none; }
+      .searchbar_btn-in:hover {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124; }
+
+.footer {
+  width: 100vw;
+  height: auto;
+  background: #f2f2f2;
+  position: absolute;
+  bottom: 0; }
+
+.foot {
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #dadce0;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.54);
+  height: 5rem;
+  width: 100%; }
+  .foot_item {
+    list-style: none;
+    display: inline-block; }
+    .foot_item:not(:last-child) {
+      padding-right: 1.5rem; }
+    .foot_item-link:link, .foot_item-link:visited {
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      color: var(--color-primary-text); }
+    .foot_item-link:hover, .foot_item-link:active {
+      text-decoration: underline; }

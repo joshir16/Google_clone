@@ -1,0 +1,31 @@
+/** @format */
+
+:root {
+  --color-primary-bg: #fff;
+  --color-primary-text: #202124;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  //defines what 1rem is (10px)
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+
+  background: var(--color-primary-bg);
+  color: var(--color-primary-text);
+
+  height: 100%;
+  padding: 0;
+}
